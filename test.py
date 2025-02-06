@@ -1,16 +1,20 @@
-# a et small
-def column(*args):
-    for arg in args:
-        b = len("schrumberry") + 2
-        c = "-" * b
-        d = "|" 
+def longest_word(*args):
+    return max(*args, key=len)
 
+def column(*args):
+    e = longest_word(*args)
+    e = len(e) + 2
+    for arg in args:
+        
+        c = "-" * e
+        d = "|" 
+        
+        
         print(c)
         print(d + arg + d)
-    
     print(c)
- 
-
-column("a          ", "small      ","schrumberry")
 
 
+
+
+column("a          ", "small      ", "schrumberry")
