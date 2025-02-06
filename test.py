@@ -1,24 +1,16 @@
+# a et small
 def column(*args):
-  for arg in args:
-    b = len(arg) + 4
-    c = "-" * b
-    d = "|"
+    for arg in args:
+        b = len("schrumberry") + 2
+        c = "-" * b
+        d = "|" 
 
-    print(c)
-    print(d, arg, d)
+        print(c)
+        print(d + arg + d)
     
-
-
-column("hello", "world")
-
-def line(a):
-    b = len(a) + 4
-    c = "-" * b
-    d = "|" 
-    
-
     print(c)
-    print(d,a,d) 
-    print(c)
+ 
 
-line("oteria")
+column("a          ", "small      ","schrumberry")
+
+
